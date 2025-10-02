@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><Ton Nom> — Développeuse Web</title>
+  <meta name="description" content="Portfolio de KUITANG Audrey Michelle — Développeuse Web. Projets, compétences et contact." />
+
+  <!-- Open Graph (aperçu quand tu partages le lien) -->
+  <meta property="og:title" content="Audrey Michelle KUITANG — Développeuse Web" />
+  <meta property="og:description" content="Découvre mes projets et compétences en développement web." />
+  <meta property="og:type" content="website" />
+
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Aller à l’accueil"><span>‹</span> Audrey Michelle <span>›</span></a>
+      <button id="themeToggle" class="btn" aria-label="Basculer le thème">Thème</button>
+    </nav>
+
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <h1>Salut, moi c’est <span class="accent">Audrey Michelle KUITANG</span> 👩🏽‍💻</h1>
+        <p>Développeuse web (Front/Back). J’aime construire des interfaces clean, rapides et accessibles.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">Voir mes projets</a>
+          <a class="btn ghost" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <img class="hero-photo" src="https://via.placeholder.com/480x480.png?text=Ta+photo" alt="Portrait de Audrey Michelle" />
+    </section>
+  </header>
+
+  <main>
+    <section id="skills" class="section container">
+      <h2>Compétences</h2>
+      <ul class="chip-list" aria-label="Compétences techniques">
+        <li class="chip">HTML5</li>
+        <li class="chip">CSS3 (Flexbox, Grid)</li>
+        <li class="chip">JavaScript (ES6+)</li>
+        <li class="chip">React</li>
+        <li class="chip">Node.js / Express</li>
+        <li class="chip">SQL / MongoDB</li>
+        <li class="chip">Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projets</h2>
+
+      <div class="grid">
+        <!-- Projet 1 -->
+        <article class="card">
+          <header class="card-header">
+            <h3>To-Do App</h3>
+            <span class="tag">JS</span>
+          </header>
+          <p>Application de gestion de tâches avec filtrage et persistance locale.</p>
+          <footer class="card-footer">
+            <a class="link" href="<lien_demo_1>" target="_blank" rel="noreferrer">Demo</a>
+            <a class="link" href="<lien_code_1>" target="_blank" rel="noreferrer">Code</a>
+          </footer>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="card">
+          <header class="card-header">
+            <h3>API Utilisateurs</h3>
+            <span class="tag">Node</span>
+          </header>
+          <p>API REST CRUD avec Express et base de données.</p>
+          <footer class="card-footer">
+            <a class="link" href="<lien_demo_2>" target="_blank" rel="noreferrer">Demo</a>
+            <a class="link" href="<lien_code_2>" target="_blank" rel="noreferrer">Code</a>
+          </footer>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="card">
+          <header class="card-header">
+            <h3>Portfolio React</h3>
+            <span class="tag">React</span>
+          </header>
+          <p>Version SPA avec routing, composants et déploiement CI.</p>
+          <footer class="card-footer">
+            <a class="link" href="<lien_demo_3>" target="_blank" rel="noreferrer">Demo</a>
+            <a class="link" href="<lien_code_3>" target="_blank" rel="noreferrer">Code</a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>À propos</h2>
+      <p>
+        Passionnée par le web moderne, j’adore transformer des idées en produits
+        simples, élégants et utiles. Je vise l’excellence technique et un design
+        qui respire.
+      </p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <form class="contact-form" aria-label="Formulaire de contact" onsubmit="return handleSubmit(event)">
+        <div class="field">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" placeholder="Ton nom" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="ton@email.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Ton message" required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Envoyer</button>
+      </form>
+
+      <div class="socials" aria-label="Réseaux sociaux">
+        <a class="link" href="<lien_github>" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="link" href="<lien_linkedin>" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="link" href="mailto:<ton_email>">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> <Ton Nom> — Tous droits réservés.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

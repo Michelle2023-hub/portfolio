@@ -1,0 +1,11 @@
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+*.log
+
+# Si un bundler arrive plus tard
+node_modules/
+dist/
+
+# Secrets/config
+.env
